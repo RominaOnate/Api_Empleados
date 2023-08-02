@@ -22,12 +22,9 @@ def calculate_statistics(data):
     total_age = sum(int(employee['employee_age']) for employee in data)
     average_age = total_age / total_employees
 
-   # salaries = [float(employee['employee_salary']) for employee in data]
-    #min_salary = min(salaries)
-    #max_salary = max(salaries)
+
     salarios = [float(employee['employee_salary']) for employee in data]
 
-    # Ordenar los salarios en orden ascendente
     salarios_ordenados = sorted(salarios)
 
     salario_minimo = salarios_ordenados[0]
